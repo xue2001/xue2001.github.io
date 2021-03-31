@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+#div1{
+    width: 75%;
+    height: 90px;
+    border-width: 2px;
+    color: #000000;
+    font-size: 54px;
+    font-style: italic;
+}
+
+#div2{
+    width: 100%;
+    margin: auto 0;
+    padding: suto 0;
+    height: 105px;
+    border: 3px solid #C798F5;
+    background-color: #F3D8D8;
+}
+
+#text1{
+    color: #1A1991;
+    padding: auto 0;
+    font-size: 28px;
+    margin-top: 12px;
+}
