@@ -3,8 +3,34 @@
 <head>
 <meta charset="utf-8">
 <title>behavior</title>
+<style type="text/css">
+#apDiv1 {
+	position: absolute;
+	width: 200px;
+	height: 115px;
+	z-index: 1;
+}
+#apDiv2 {
+	position: absolute;
+	width: 200px;
+	height: 115px;
+	z-index: 1;
+}
+</style>
+<script type="text/javascript">
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+function MM_popupMsg(msg) { //v1.0
+  alert(msg);
+}
+</script>
 </head>
 
-<body>
+<body onLoad="MM_popupMsg('欢迎来到“经济管理学院”！');MM_openBrWindow('http://sem.njust.edu.cn/','经济管理学院','')">
+<div id="apDiv2"></div>
+
+
+
 </body>
 </html>
