@@ -1,0 +1,63 @@
+<!doctype html>
+<html style="height: 100%">
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+	<script src="jquery-3.4.1.min.js"></script>
+	
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideDown("slow");
+  });
+});
+</script>
+<script src="https://cdn.staticfile.org/echarts/4.3.0/echarts.min.js"></script>
+ 
+<style type="text/css"> 
+#panel,#flip
+{
+	padding:5px;
+	text-align:center;
+	background-color:#e5eecc;
+	border:solid 1px #c3c3c3;
+}
+#panel
+{
+	padding:50px;
+	display:none;
+}
+</style>
+	
+</head>
+
+<body>
+  <div id="flip">点击</div>
+  <div id="panel">《Nature Communications》各学科发文量分布情况
+	 
+     <div id="main" style="width: 600px;height:400px;"></div>
+     <script type="text/javascript">
+        
+        var myChart = echarts.init(document.getElementById('main'));
+ 
+        myChart.setOption({
+            series : [
+                {
+                    name: '访问来源',
+                    type: 'pie',    // 设置图表类型为饼图
+                    radius: '55%',  // 饼图的半径，外半径为可视区尺寸（容器高宽中较小一项）的 55% 长度。
+                    data:[          // 数据数组，name 为数据项名称，value 为数据项值
+                        {value:19783, name:'Biological sciences'},
+                        {value:2588, name:'Earth and environmental sciences'},
+                        {value:6090, name:'Health sciences'},
+                        {value:10180, name:'Physical sciences'},
+                        {value:832, name:'Scientific community and society'}
+                    ]
+                }
+            ]
+        })
+    </script>
+	
+  </div>
+</body>
+</html>
