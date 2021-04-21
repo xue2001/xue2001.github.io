@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="jquery-3.4.1.min.js"></script>
+<title>无标题文档</title>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#div1").fadeIn(3000);
+    $("#div2").fadeIn("slow");
+    $("#div3").fadeIn();
+	$("#div3").animate({
+      left:'380px',
+      opacity:'1',
+      height:'100px',
+      width:'220px'
+    });
+  });
+});
+	
+	
+	
+</script>
+</head>
+
+<body>
+	<button>点击</button>
+	<div id="div1" style="width:300px;height:220px;display:none;background-color:red;">
+	  <img src="3.jpg" alt="" width="300" height="220"/>
+	
+	</div>
+<br>
+<div id="div2" style="width:300px;height:220px;display:none;background-color:green;">
+	<img src="1.jpg" alt="" width="300" height="220"/>
+	
+</div>
+<br>
+<div id="div3" style="width:300px;height:220px;display:none;background-color:blue;position:absolute;">
+	
+  <img src="2.jpg" alt="" width="300" height="220"/>
+</div>
+</body>
+</html>
